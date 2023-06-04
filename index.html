@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty project</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        color: #f4aeba;
+        font-size: 30px;
+        text-decoration: underline;
+        font-weight: normal;
+        text-align: center;
+      }
+      h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        font-weight: normal;
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        margin: 20px auto;
+
+        padding: 10px 0;
+        max-width: 400px;
+        background: linear-gradient(#f69d3c, #3f87a6);
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid whitesmoke;
+        border-radius: 40px;
+        padding-top: 20px;
+      }
+
+      div {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      .wrapper {
+        max-width: 700px;
+        padding: 15px 60px;
+        margin: 0 auto;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        border-radius: 30px;
+      }
+
+      .info {
+        color: lightcoral;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #835f3d;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .first {
+        font-size: 18px;
+      }
+
+      .last {
+        text-align: center;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>🌤 GOOD MORNINIG AND WIN TODAY👋</h1>
+      <h2>ACRYLIC NAILS FOR BEGINNERS 💅🏽</h2>
+
+      <p class="first">
+        <strong>
+          🍭Acrylic is a power that bonds with monomer to create a strong and
+          lightweight nail extension</strong
+        >
+      </p>
+      <ul>
+        <li>
+          <h3>Tools needed for Acrylic</h3>
+          <p>
+            ❤Prep<br />❤Primer<br />❤Top Coat<br />❤Buffer Blocks<br />❤Nail
+            Files<br />
+          </p>
+        </li>
+        <li>
+          <h3>Products needed to get started</h3>
+          <p>
+            ❤Clear Acrylic Powder<br />❤color Powder<br />❤EMA Monomer<br />❤Acrylic
+            Brush
+          </p>
+        </li>
+      </ul>
+      <hr />
+
+      <strong>
+        <a
+          href="https://www.google.com/search?q=the+basics+of+acrylic+nails+for+beginners+acrylic+101%3A+kiara+sky+nails&oq=the+basics+of+acrylic+nails+for+beginners+acrylic+101%3A+kiara+sky+nails&aqs=chrome..69i57.90039j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:cdb92bc7,vid:cKwt8kLtBoY"
+          target="_blank"
+          class="info"
+          ><em> More Info👈🏽</em></a
+        >
+      </strong>
+
+      <img
+        src="https://naildesignsjournal.com/wp-content/uploads/2021/05/cute-acrylic-nails-art-lavender.jpg"
+        alt="beautiful acrylic-nails"
+        width="300"
+        height="300"
+      />
+
+      <button>Make Appointment</button>
+
+      <script>
+        function details() {
+          let name = prompt("What is your name?");
+          let age = prompt("What age are you?");
+
+          name = name.toLowerCase();
+          name = name.trim();
+          age = age.trim();
+
+          let h1 = document.querySelector("h1");
+
+          if (age < 18) {
+            h1.innerHTML =
+              "😞Sorry! " +
+              name +
+              ",you cannot do your nails, you are under-age ";
+          } else {
+            h1.innerHTML =
+              "🙂Hello!" +
+              name +
+              ", your appointment is booked, click on the link below to learn more about acrylic nails 👇🏽";
+          }
+        }
+        FocusEvent;
+
+        let bookingButtn = document.querySelector("button");
+        bookingButtn.addEventListener("click", details);
+      </script>
+      <p class="last">Coded by Pabalelo Tsebempe</p>
+    </div>
+    <script>
+      alert("Welcome to my website!\nEnjoy 😊");
+    </script>
+  </body>
+</html>
